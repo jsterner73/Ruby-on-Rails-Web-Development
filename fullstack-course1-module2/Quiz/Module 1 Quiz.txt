@@ -180,7 +180,7 @@ X	git checkout .
 
 	git show master:test.rb
 
-(X)	git restore test.rb
+	git restore test.rb
 
 X	git checkout -- test.rb
 
@@ -231,13 +231,13 @@ repo2  https://foobar.com/stuff.git
 repo 2  https://foobar.com/stuff.git
 (push)
 
-	git push repo2 master
+X	git push repo2 master
 
 	git upload https://foobar.com/stuff.git
 
-(X)	git push https://foobar.com/stuff.git
+	git push https://foobar.com/stuff.git
 
-(X)	git push master https://foobar.com/stuff.git
+	git push master https://foobar.com/stuff.git
 
 15. Which of the following statements apply to a centralized version control system (VCS)? (Select all that apply.)
 
