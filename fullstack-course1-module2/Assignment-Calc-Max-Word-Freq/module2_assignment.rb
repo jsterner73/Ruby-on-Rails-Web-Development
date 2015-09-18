@@ -105,11 +105,11 @@ class Solution
     analyzers.each do |analyzer|
       if analyzer.highest_wf_count > @highest_count_across_lines
         @highest_count_across_lines = analyzer.highest_wf_count
-        @highest_count_words_across_lines = [ analyzer.highest_wf_words ]
+        @highest_count_words_across_lines = [ analyzer ]
       elsif analyzer.highest_wf_count == @highest_count_across_lines
-        analyzer.highest_wf_words.each do |word|
-          @highest_count_words_across_lines.push word
-        end
+        /analyzer.highest_wf_words.each do |word|/
+        @highest_count_words_across_lines.push analyzer
+        /end/
       end
     end
   end
