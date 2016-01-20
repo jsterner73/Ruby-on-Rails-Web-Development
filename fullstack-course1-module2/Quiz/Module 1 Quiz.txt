@@ -1,0 +1,262 @@
+Module 1 Quiz
+
+1. Which of the following is/are true about git? (Select all that apply.)
+
+
+	It places a hidden .git directory in every sub-directory of your source tree.
+
+X	Once you have cloned one of the course example repositories from Github, you will have local access to every change that was ever pushed to that repository in Github.
+
+	Once you commit a file to your local repository, you can recover your file from Github if you lose your computer/local repository.
+
+X	Git uses a .gitignore file to define file/directory names and patterns that you do not want managed by Git.
+
+2. Give the Course 1, Module 2 Github repository is located at the following url - https://github.com/jhu-ep-coursera/fullstack-course1-module2 - what is the command that will obtain a local instance of the repository?
+
+
+	git checkout
+
+	git copy
+
+X	git clone
+
+	git pull origin master
+
+3. Given the Course 1, Module 2 Github repository is located at the following url - https://github.com/jhu-ep-coursera/fullstack-course1-module2 - what folder is a file called "beginning.rb"? (You may find the Github command "t", covered in this module's lectures, helpful in answering this question.)
+
+
+X	Lecture01-Ruby-Basics
+
+	Lecture04-Blocks
+
+	Lecture10-Classes
+
+	Lecture15-IntroToTesting
+
+4. What Git properties should be set prior to checking code into your repository? (Select all that apply.)
+
+
+	user.password
+
+X	user.email
+
+	user.timezone
+
+X	user.name
+
+5. What is the default branch for a new repository?
+
+
+	root
+
+X	master
+
+	github
+
+	trunk
+
+6. Given the output of the "git status" command below, what is the state of "test.rb"?
+
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#    (use "git add ,file...." to include in 
+what will be committed)
+#
+#        test.rb
+nothing added to commit but untracked files 
+present (use "git add" to track)
+
+	Tracked file just edited.
+
+	Tracked file with no changes since last commit.
+
+X	Untracked file not managed by git.
+
+	Newly tracked file not yet committed.
+
+7. Given the output of the "git status" and "ls" commands below, what is the state of "test.rb"?
+
+$ git status
+# On branch master
+nothing to commit, working directory clean
+
+$ ls
+test.rb
+
+	Untracked file not managed by Git.
+
+	Tracked file just edited.
+
+X	Tracked file with no changes since last commit.
+
+	Newly tracked file not yet committed.
+
+8. Given the output of the "git status" command below, what is the state of "test.rb"?
+
+$ git status
+# On branch master
+# Changes not staged for commit:
+#     (use "git add <file>..." to update what
+will be committed)
+#     (use "git checkout -- <file>..." to 
+discard changes in workin directory)
+#
+#           modified:  test.rb
+#
+no changes added to commit (use "git add"
+and/or "git commit -a")
+
+	Tracked file with no changes since last commit.
+
+	Newly tracked file not yet committed.
+
+	Untracked file not managed by Git.
+
+X	Tracked file just edited.
+
+9. Given the output of the "git diff test.rb" command below, what is the state of "test.rb"?
+
+$ git diff test.rb
+diff --git a/test.rb b/test.rb
+index ce01362..94954ab 100644
+--- a/test.rb
++++ b/test.rb
+@@ -1 +1,2 @@
+ hello
++world
+
+X	text "world" was added
+
+	text "hello" was added
+
+	text "hello" was removed
+
+	text "world" was removed
+
+10. Which commands will revert the change made below so that we go back to the previous checked-in state? (Select all that apply.)
+
+$ git diff test.rb
+diff --git a/test.rb b/test.rb
+index ce01362..94954ab 100644
+--- a/test.rb
++++ b/test.rb
+@@ -1 +1,2 @@
+ hello
++world
+
+	git revert test.rb
+
+X	git checkout .
+
+X	git checkout -- test.rb
+
+	git show master:test.rb
+
+11. You have accidentally deleted test.rb. Which commands will restore the file to its previous committed state? (Select all that apply.)
+
+$ rm test.rb
+
+$ git status
+# On branch master
+# Changes not staged for commit:
+#    (use "git add/rm <file>..." to 
+update what will be committed)
+#    (use "git checkout -- <file>..." to
+discard changes in working directory)
+#
+#         deleted:     test.rb
+#
+no changes added to commit (use "git
+add" and/or "git commit -a")
+
+$ ls test.rb
+ls: test.rb: No such file or directory
+
+X	git checkout .
+
+	git show master:test.rb
+
+	git restore test.rb
+
+X	git checkout -- test.rb
+
+12. You are told to push your master branch to https://git.repo.com/stuff.git . What is the command to add this remote url to your repository?
+
+
+X	git remote add repo https://git.repo.com/stuff.git
+
+	git push master https://git.repo.com/stuff.git
+
+	git push remote https://git.repo.com/stuff.git
+
+	git add remote repo https://git.repo.com/stuff.git
+
+13. You are told to update your master branch for the Module 2 course examples located at the following URL: https://github.com/jhu-ep-coursera/fullstack-course1-module2 . Given the state of the repository below, what is the command to update your copy of the examples?
+
+$ git remote -v
+origin https://github.com/jhu-ep-
+coursera/fullstack-course1-module2
+(fetch)
+origin https://github.com/jhu-ep-
+coursera/fullstack-course1-module2
+(push)
+repo2  https://foobar.com/stuff.git
+(fetch)
+repo 2  https://foobar.com/stuff.git
+(push)
+
+	git pull master https://github.com/jhu-ep-coursera/fullstack-course1-module2
+
+	git update origin master
+
+	git clone https:github.com/jhu-ep-coursera/fullstack-course1-module2
+
+X	git pull origin master
+
+14. You are told to clone the Module 3 course example located at the following url https://github.com/jhu-ep-coursera/fullstack-course1-module3 and push the master branch to a remote repository located at https://foobar.com/stuff.git. Given the state of the repository below, what is the command to deploy the master branch from your copy of the repository to the second repository?
+
+$ git remote -v
+origin https://github.com/jhu-ep-
+coursera/fullstack-course1-module2
+(fetch)
+origin https://github.com/jhu-ep-
+coursera/fullstack-course1-module2
+(push)
+repo2  https://foobar.com/stuff.git
+(fetch)
+repo 2  https://foobar.com/stuff.git
+(push)
+
+X	git push repo2 master
+
+	git upload https://foobar.com/stuff.git
+
+	git push https://foobar.com/stuff.git
+
+	git push master https://foobar.com/stuff.git
+
+15. Which of the following statements apply to a centralized version control system (VCS)? (Select all that apply.)
+
+
+	Development and full CM commands are done locally.
+
+X	Centralized server keeps all details of the repository. Local copy primarily keeps only information on the current branch.
+
+X	Must have connectivity to the central server in order to perform most CM commands.
+
+	Git is an example of this type of VCS.
+
+16. Which of the following statements apply to a distributed version control system (VCS)? (Select all that apply.)
+
+
+	Only development is local. All CM commands are done through communication with the centralized server.
+
+	Subversion (SVN) is an example of this type of VCS.
+
+X	Each instance of the repository contains a full copy of the repository. An instance can be fully restored from any other instance of the repository that has the latest changes.
+
+X	Changes can be pushed/pulled to/from remote clones of that instance.

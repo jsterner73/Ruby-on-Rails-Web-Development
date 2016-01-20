@@ -4,7 +4,11 @@ class TodoListsController < ApplicationController
   # GET /todo_lists
   # GET /todo_lists.json
   def index
+<<<<<<< HEAD
     @todo_lists = current_user.todo_lists.paginate(page: params[:page], per_page: 8)
+=======
+    @todo_lists = TodoList.all
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
   end
 
   # GET /todo_lists/1
@@ -14,7 +18,11 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/new
   def new
+<<<<<<< HEAD
     @todo_list = current_user.todo_lists.new
+=======
+    @todo_list = TodoList.new
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
   end
 
   # GET /todo_lists/1/edit
@@ -24,7 +32,11 @@ class TodoListsController < ApplicationController
   # POST /todo_lists
   # POST /todo_lists.json
   def create
+<<<<<<< HEAD
     @todo_list = current_user.todo_lists.new(todo_list_params)
+=======
+    @todo_list = TodoList.new(todo_list_params)
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
 
     respond_to do |format|
       if @todo_list.save
@@ -64,7 +76,11 @@ class TodoListsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_todo_list
+<<<<<<< HEAD
       @todo_list = current_user.todo_lists.find(params[:id])
+=======
+      @todo_list = TodoList.find(params[:id])
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

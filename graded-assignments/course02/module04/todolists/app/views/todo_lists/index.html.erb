@@ -18,14 +18,21 @@
         <td><%= todo_list.list_due_date %></td>
         <td><%= link_to 'Show', todo_list %></td>
         <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
+<<<<<<< HEAD
         <td><%= link_to 'Destroy', todo_list, method: :delete %></td>
+=======
+        <td><%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
       </tr>
     <% end %>
   </tbody>
 </table>
+<<<<<<< HEAD
 <p/>
 
 <%= will_paginate @todo_lists %>
+=======
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
 
 <br>
 

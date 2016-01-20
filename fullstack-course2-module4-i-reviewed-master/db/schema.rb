@@ -12,6 +12,10 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20151015232430) do
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
   create_table "books", force: :cascade do |t|
     t.string   "name"
     t.string   "author"
@@ -38,4 +42,8 @@ ActiveRecord::Schema.define(version: 20151015232430) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c439b8be001a1e2440496d55bde3b2670224c02
 end
